@@ -1,14 +1,14 @@
-//========= Icons ====================================
-import { Moon, Sun, Menu, X, Dot } from "lucide-react";
-import { FaBluesky } from "react-icons/fa6";
+import { Sun, Moon, Menu, X,  } from "lucide-react";
 
-//==============Images =================================
+// ========== Images =================================
+
 import logoDark from "../../assets/Logo/Logo-2-Dark.png";
 import logoLight from "../../assets/Logo/Logo-2-Light.png";
+
 import nameDark from "../../assets/Logo/Shashi-2-Dark.png";
 import nameLight from "../../assets/Logo/Shashi-2-Light.png";
 
-// =========== NAVIGATION ITEMS ===============
+// ========== NAVIGATION ITEMS ======================
 
 const navItems = [
     {
@@ -21,7 +21,7 @@ const navItems = [
     },
     {
         name: "Experience",
-        link: "#expirience",
+        link: "#experience",
     },
     {
         name: "Skills",
@@ -41,6 +41,8 @@ const navItems = [
     },
 ];
 
+// ========== ROUTE NAVIGATION =======================
+
 const navItemsNew = [
     {
         name: "Home",
@@ -52,7 +54,7 @@ const navItemsNew = [
     },
     {
         name: "Experience",
-        link: "/expirience",
+        link: "/experience",
     },
     {
         name: "Skills",
@@ -72,21 +74,17 @@ const navItemsNew = [
     },
 ];
 
-
-
-// ================== EXPORTS =======================
+// ================== EXPORTS ========================
 
 export {
     Moon,
     Sun,
-    Menu,
     X,
-    Dot,
-    FaBluesky,
+    Menu,
     logoDark,
     logoLight,
     nameDark,
     nameLight,
     navItems,
-    navItemsNew
-}
+    navItemsNew,
+};
