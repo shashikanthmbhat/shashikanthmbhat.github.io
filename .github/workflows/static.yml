@@ -1,9 +1,9 @@
-# Deploy Vite + React site to GitHub Pages
-name: Deploy static content to Pages
+# Deploy Vite React site to GitHub Pages
+name: Deploy to GitHub Pages
+
 on:
   push:
-    branches:
-      - main
+    branches: ["main"]
 
   workflow_dispatch:
 
@@ -13,16 +13,16 @@ permissions:
   id-token: write
 
 concurrency:
-  group: pages
-  cancel-in-progress: false
+  group: "pages"
+  cancel-in-progress: true
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
-
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
 
     steps:
       # Checkout repository
@@ -30,17 +30,17 @@ jobs:
         uses: actions/checkout@v4
 
       # Setup Node.js
-      - name: Setup Node.js
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 24
+          node-version: 22
           cache: npm
 
       # Install dependencies
       - name: Install dependencies
         run: npm ci
 
-      # Build Vite + React application
+      # Build Vite application
       - name: Build
         run: npm run build
 
@@ -48,11 +48,11 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
-      # Upload Vite dist folder
+      # Upload Vite production build
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist'
+          path: "./dist"
 
       # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
