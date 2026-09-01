@@ -7,7 +7,6 @@ on:
       - main
 
   workflow_dispatch:
-
 # Required permissions for GitHub Pages deployment
 permissions:
   contents: read
