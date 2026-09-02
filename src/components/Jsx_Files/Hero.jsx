@@ -113,7 +113,7 @@ const Header = ({ darkMode }) => {
                 className="body-font z-10"
             >
 
-                <div className="container mx-auto flex px-4 sm:px-8 lg:px-14 py-12 lg:py-14 flex-col lg:flex-row items-center justify-between lg:mt-14 mt-14">
+                <div className="container mx-auto flex px-4 sm:px-8 lg:px-14 py-12 lg:py-14 flex-col lg:flex-row items-center justify-between lg:mt-12 mt-12">
 
                     {/* ============================
                         LEFT CONTENT
@@ -142,7 +142,7 @@ const Header = ({ darkMode }) => {
                             {/* HI */}
 
                             <motion.h1
-                                className={`font-courgette-regular text-4xl sm:text-5xl lg:text-6xl mb-2 font-bold ${theme.textPrimary}`}
+                                className={`font-courgette-regular text-3xl sm:text-4xl lg:text-5xl mb-2 font-bold ${theme.textPrimary}`}
                                 data-aos="fade-up"
                                 data-aos-delay="500"
                             >
