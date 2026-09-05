@@ -5,6 +5,7 @@ import { ChartBarIcon } from "@heroicons/react/24/solid";
 
 import hero1 from "../../assets/Hero/hero1.png";
 import cv from "../../assets/Hero/cv.pdf";
+import p1 from "../../assets/Sample/p1.png"
 
 // ============================
 // IMAGES / ASSETS
@@ -12,6 +13,7 @@ import cv from "../../assets/Hero/cv.pdf";
 
 export const assets = {
     hero1,
+    p1,
     cv,
     DownloadIcon: Download,
     Mail: Mail,

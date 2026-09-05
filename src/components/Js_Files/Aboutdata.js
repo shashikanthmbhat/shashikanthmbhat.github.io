@@ -1,7 +1,8 @@
 import Me4 from "../../assets/Hero/Me4.png";
+import p2 from "../../assets/Sample/p2.png"
 
 // ============ ABOUT IMAGE =================================
-export const aboutImages = { Me4, };
+export const aboutImages = { Me4, p2, };
 
 // ======== IMAGE STYLE ================================
 export const imageStyle = {

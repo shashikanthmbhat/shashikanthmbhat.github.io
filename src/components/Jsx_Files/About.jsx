@@ -36,17 +36,17 @@ const About = ({ darkMode }) => {
                     {/* className="relative w-full lg:w-[80%] max-w-sm lg:max-w-md min-h-80.5 lg:min-h-0" */}
                    <div className="relative w-full lg:w-[80%] h-[75vh] max-h-175 min-h-100">
                     {/* Shadow Outline */}
-                    <motion.div
+                    {/* <motion.div
                         className="absolute inset-0 z-0 rounded-2xl shadow-lg border-3 border-blue-500"
                         style={{
                             boxShadow: "0 0 20px rgb(34 211 238)",
-                        }}/>
+                        }}/> */}
 
                         {/* Image Wrapper */}
-                        <div className="relative z-10 w-full h-full flex items-center justify-center rounded-2xl overflow-hidden border">
+                        <div className="relative z-10 w-full h-full flex items-center justify-center rounded-2xl overflow-hidden border-0">
 
                             <img
-                                src={aboutImages.Me4}
+                                src={aboutImages.p2}
                                 alt="About Me"
                                 className="w-full h-full object-contain transition-transform duration-500 hover:scale-105" />
                         </div>

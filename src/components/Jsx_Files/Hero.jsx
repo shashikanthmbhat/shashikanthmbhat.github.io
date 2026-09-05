@@ -365,35 +365,25 @@ const Header = ({ darkMode }) => {
 
                             {/* BACKGROUND RING */}
 
-                            <motion.div
+                            {/* <motion.div
                                 className="absolute inset-0 z-0 rounded-full border-3 border-blue-500"
                                 style={{
                                     boxShadow:
                                         "0 0 20px rgb(34 211 238)"
                                 }}
-                            />
+                            /> */}
 
 
                             {/* IMAGE */}
 
                             <motion.div
-                                className="relative z-10 w-[97%] h-[97%] rounded-full overflow-hidden border border-[#1f1641]"
-                                initial={{
-                                    opacity: 0,
-                                    scale: 0.9
-                                }}
-                                animate={{
-                                    opacity: 1,
-                                    scale: 1
-                                }}
-                                transition={{
-                                    duration: 0.8,
-                                    ease: "easeOut"
-                                }}
-                            >
+                                className="relative z-10 w-[97%] h-[97%] rounded-full overflow-hidden border-0 border-[#1f1641]"
+                                initial={{ opacity: 0, scale: 0.9 }}
+                                animate={{ opacity: 1, scale: 1 }}
+                                transition={{ duration: 0.8, ease: "easeOut" }}>
 
                                 <img
-                                    src={assets.hero1}
+                                    src={assets.p1}
                                     alt="About Profile"
                                     className="w-full h-full object-cover"
                                 />
